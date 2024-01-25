@@ -29,10 +29,7 @@ export default function Page() {
             </h1>
             <form className="space-y-4 md:space-y-6" onSubmit={handleForm}>
               <div>
-                <label
-                  for="email"
-                  className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                >
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                   Your email
                 </label>
                 <input
