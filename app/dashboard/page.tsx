@@ -5,6 +5,7 @@ import { AuthContext } from "../context";
 import React, { useContext } from "react";
 import firebase from "firebase/compat/app";
 import { redirect } from "next/navigation";
+import AuthButton from "../components/AuthButton";
 export default function Home() {
   const { user } = useContext(AuthContext) as { user: firebase.User };
 
@@ -26,6 +27,7 @@ export default function Home() {
           with Tailwind CSS, TypeScript, ESLint, Prettier, Husky, Lint-Staged,
           Absolute Imports, and Absolute Paths
         </p>
+        <AuthButton />
       </div>
     </main>
   );

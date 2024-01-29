@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/context.tsx"
+    "app/context.tsx",
+    "app/api/create-images-table"
   ],
   "exclude": ["node_modules"]
 }
