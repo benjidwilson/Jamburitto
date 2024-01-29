@@ -14,7 +14,10 @@ export default async function Page() {
       <h1 className={`mb-4 text-xl md:text-2xl`}>Dashboard</h1>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {images.map((image) => (
-          <div className="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
+          <div
+            key={image.id}
+            className="flex items-center p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+          >
             {image.title}
           </div>
         ))}
